@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+            <form action="">
+                <label for="">NAME</label>
+                <input type="text" id="name">
+                <label for="">PHONE</label>
+                <input type="text" id="number">
+                <label for="">EMAIL</label>
+                <input type="text">
+                <label for="">CLASS</label>
+                <input type="text">
+                <input type="submit" name="" id="" onclick="datatoWhtsapp()">
+
+            </form>
+
+            <a href="https://wa.me/919958939593">go to hello</a>
+            <script>
+                function datatoWhtsapp(){
+                    var name = document.getElementById("name").value;
+                    var no = document.getElementById("number").value
+
+
+                    var url = "https://wa.me/919818661127?text="+ "Name :  "   + name +  "     " +no ;
+                    window.open(url,"_blank").focus();
+                }
+            </script>
+</body>
+</html>
